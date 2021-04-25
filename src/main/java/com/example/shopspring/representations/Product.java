@@ -1,12 +1,27 @@
 package com.example.shopspring.representations;
 
-import org.springframework.stereotype.Component;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import javax.persistence.*;
 import java.util.Objects;
 
-@Component
+@Entity
+@Table(name = "products")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Product implements Nameable {
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "products_id_seq")
+    @SequenceGenerator(name = "products_id_seq", sequenceName = "products_id_seq", allocationSize = 1)
+    private Long id;
+    @Column(name = "name")
     private String name;
+    @Column(name = "price")
     private double price;
+
+    public Long getId() {
+        return id;
+    }
 
     public String getName() {
         return name;
@@ -17,11 +32,6 @@ public class Product implements Nameable {
     }
 
     public void setPrice(double price) {
-        this.price = price;
-    }
-
-    public Product(String name, double price) {
-        this.name = name;
         this.price = price;
     }
 

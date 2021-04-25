@@ -5,6 +5,7 @@ import com.example.shopspring.representations.Market;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.function.EntityResponse;
 
 import java.util.List;
 
@@ -19,20 +20,20 @@ public class MarketController {
 
     @GetMapping("/markets")
     List<Market> getMarkets() {
-        return marketRepository.getAll();
+        return marketRepository.findAll();
     }
 
     @DeleteMapping("/markets")
-    Market deleteMarket(@RequestBody Market market) {
-        return marketRepository.delete(market);
+    ResponseEntity<?> deleteMarket(@RequestBody Market market) {
+        marketRepository.deleteById(market.getId());
+        if (!marketRepository.findAll().contains(market))
+            return ResponseEntity.ok("DELETED");
+        else
+            return ResponseEntity.badRequest().build();
     }
 
     @PostMapping("/markets")
-    ResponseEntity<HttpStatus> createMarket(@RequestBody Market market) {
-        boolean created = marketRepository.create(market);
-        System.out.print(market.toString());
-        if (created)
-            return ResponseEntity.ok(HttpStatus.CREATED);
-        return ResponseEntity.badRequest().build();
+    Market createMarket(@RequestBody Market market) {
+        return marketRepository.save(market);
     }
 }

@@ -1,21 +1,30 @@
 package com.example.shopspring.representations;
 
-import org.springframework.stereotype.Component;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import javax.persistence.*;
 import java.util.Objects;
 
-@Component
+@Entity
+@Table(name = "markets")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Market implements Nameable {
 
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "markets_id_seq")
+    @SequenceGenerator(name = "markets_id_seq", sequenceName = "markets_id_seq", allocationSize = 1)
+    private Long id;
+    @Column(name = "name")
     private String name;
+    @Column(name = "address")
     private String address;
 
-    public Market(String name, String address) {
-        this.name = name;
-        this.address = address;
+    public Market() {
     }
 
-    public Market() {
+    public Long getId() {
+        return id;
     }
 
     public String getName() {
