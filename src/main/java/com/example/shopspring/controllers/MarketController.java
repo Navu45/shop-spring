@@ -2,10 +2,9 @@ package com.example.shopspring.controllers;
 
 import com.example.shopspring.repositories.MarketRepository;
 import com.example.shopspring.representations.Market;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import com.example.shopspring.representations.Product;
+import org.hibernate.criterion.Example;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.function.EntityResponse;
 
 import java.util.List;
 
@@ -23,13 +22,10 @@ public class MarketController {
         return marketRepository.findAll();
     }
 
+
     @DeleteMapping("/markets")
-    ResponseEntity<?> deleteMarket(@RequestBody Market market) {
+    void deleteMarket(@RequestBody Market market) {
         marketRepository.deleteById(market.getId());
-        if (!marketRepository.findAll().contains(market))
-            return ResponseEntity.ok("DELETED");
-        else
-            return ResponseEntity.badRequest().build();
     }
 
     @PostMapping("/markets")

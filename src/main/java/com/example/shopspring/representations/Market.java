@@ -1,12 +1,18 @@
 package com.example.shopspring.representations;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
 @Table(name = "markets")
+@Getter
+@Setter
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Market implements Nameable {
 
@@ -19,20 +25,10 @@ public class Market implements Nameable {
     private String name;
     @Column(name = "address")
     private String address;
+    @OneToMany(mappedBy = "market")
+    private List<Product> marketProducts;
 
     public Market() {
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getAddress() {
-        return address;
     }
 
     @Override

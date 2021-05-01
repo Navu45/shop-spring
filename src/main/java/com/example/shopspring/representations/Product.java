@@ -1,5 +1,6 @@
 package com.example.shopspring.representations;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
@@ -18,6 +19,9 @@ public class Product implements Nameable {
     private String name;
     @Column(name = "price")
     private double price;
+    @JsonIgnore
+    @ManyToOne
+    private Market market;
 
     public Long getId() {
         return id;
@@ -44,13 +48,17 @@ public class Product implements Nameable {
         if (o == null || getClass() != o.getClass()) return false;
         Product product = (Product) o;
         return Double.compare(product.price, price) == 0 &&
-                name.equals(product.name);
+                Objects.equals(id, product.id) &&
+                Objects.equals(name, product.name) &&
+                Objects.equals(market, product.market);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, price);
+        return Objects.hash(id, name, price, market);
     }
 
-
+    public Market getMarket() {
+        return market;
+    }
 }
