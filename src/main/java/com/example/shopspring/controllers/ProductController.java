@@ -1,16 +1,14 @@
 package com.example.shopspring.controllers;
 
 import com.example.shopspring.repositories.ProductRepository;
-import com.example.shopspring.repositories.ProductRepository;
 import com.example.shopspring.representations.Market;
 import com.example.shopspring.representations.Product;
-import com.example.shopspring.representations.Product;
+import com.example.shopspring.services.MarketService;
 import com.example.shopspring.services.ProductService;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 public class ProductController {
@@ -23,24 +21,37 @@ public class ProductController {
     }
 
     @GetMapping("/products")
+    public @ResponseBody
     List<Product> getProducts() {
         return productRepository.findAll();
     }
 
     @DeleteMapping("/products")
+    public @ResponseBody
     void deleteProduct(@RequestBody Product product) {
         productRepository.deleteById(product.getId());
     }
 
     @PostMapping("/products")
+    public @ResponseBody
     Product createProduct(@RequestBody Product product) {
+        Market market = product.getMarket();
         return productRepository.save(product);
     }
 
-    @GetMapping(value = "/products/{productId}/market")
+    @GetMapping(value = "/products/search/market")
     public @ResponseBody
-    Market getMarketUser(@PathVariable("productId")
-                                                 Long productId){
-        return productService.getMarketByProduct(productId);
+    Market getMarketByProduct(@RequestBody Product product){
+        return productService.getMarketByProduct(product);
+    }
+
+    @GetMapping("/products/search/product/price")
+    @ResponseBody List<Product> getProductByCost(@RequestBody Map<String, String> params) {
+        return productService.getModelBySearchStr(params.get("between"), "price");
+    }
+
+    @GetMapping("/products/search/product/name")
+    @ResponseBody List<Product> getProductByName(@RequestBody Map<String, String> params) {
+        return productService.getModelBySearchStr(params.get("search"), "name");
     }
 }

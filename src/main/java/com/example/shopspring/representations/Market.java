@@ -18,6 +18,7 @@ public class Market implements Nameable {
 
     @Id
     @Column(name = "id")
+    @JsonIgnore
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "markets_id_seq")
     @SequenceGenerator(name = "markets_id_seq", sequenceName = "markets_id_seq", allocationSize = 1)
     private Long id;

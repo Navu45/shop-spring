@@ -2,16 +2,21 @@ package com.example.shopspring.representations;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
 @Table(name = "products")
+@Getter
+@Setter
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Product implements Nameable {
     @Id
     @Column(name = "id")
+    @JsonIgnore
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "products_id_seq")
     @SequenceGenerator(name = "products_id_seq", sequenceName = "products_id_seq", allocationSize = 1)
     private Long id;
@@ -23,22 +28,6 @@ public class Product implements Nameable {
     @ManyToOne
     private Market market;
 
-    public Long getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
     public Product() {
     }
 
@@ -48,17 +37,11 @@ public class Product implements Nameable {
         if (o == null || getClass() != o.getClass()) return false;
         Product product = (Product) o;
         return Double.compare(product.price, price) == 0 &&
-                Objects.equals(id, product.id) &&
-                Objects.equals(name, product.name) &&
-                Objects.equals(market, product.market);
+                Objects.equals(name, product.name);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(id, name, price, market);
-    }
-
-    public Market getMarket() {
-        return market;
     }
 }
