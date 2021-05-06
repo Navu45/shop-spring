@@ -12,7 +12,7 @@ import java.util.List;
 @ComponentScan
 public interface SearchService<V extends Nameable> {
     List<V> findBySearchStr(String str, String key);
-    V delete(V model);
+    void delete(V model);
     List<V> findAll() ;
     V create(V model);
 }

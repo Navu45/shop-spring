@@ -5,9 +5,12 @@ import com.example.shopspring.representations.Market;
 import com.example.shopspring.representations.Product;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Service
+@Transactional
 @Slf4j
 public class ProductService implements SearchService<Product>{
 
@@ -41,9 +44,9 @@ public class ProductService implements SearchService<Product>{
     }
 
     @Override
-    public Product delete(Product product) {
+    public void delete(Product product) {
         log.info("delete product " + product.toString());
-        return repository.deleteByPriceAndName(product.getPrice(), product.getName());
+        repository.deleteByPriceAndName(product.getPrice(), product.getName());
     }
 
     @Override

@@ -10,5 +10,5 @@ import java.util.List;
 public interface MarketRepository extends JpaRepository<Market, Long> {
     List<Market> findMarketsByNameContaining(String str);
     List<Market> findMarketsByAddressContaining(String str);
-    Market deleteByAddressAndName(String address, String name);
+    void deleteByAddressAndName(String address, String name);
 }

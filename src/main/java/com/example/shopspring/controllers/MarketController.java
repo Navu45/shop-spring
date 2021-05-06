@@ -23,9 +23,9 @@ public class MarketController {
 
 
     @DeleteMapping("/markets")
-    @ResponseBody Market
+    @ResponseBody void
     deleteMarket(@RequestBody Market market) {
-        return marketService.delete(market);
+        marketService.delete(market);
     }
 
     @PostMapping("/markets")

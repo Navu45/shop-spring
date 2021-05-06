@@ -2,14 +2,15 @@ package com.example.shopspring.services;
 
 import com.example.shopspring.repositories.MarketRepository;
 import com.example.shopspring.representations.Market;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Service
+@Transactional
 @Slf4j
 public class MarketService implements SearchService<Market>{
     private MarketRepository repository;
@@ -33,9 +34,9 @@ public class MarketService implements SearchService<Market>{
     }
 
     public @ResponseBody
-    Market delete(Market market) {
+    void delete(Market market) {
         log.info("delete market " + market.toString());
-        return repository.deleteByAddressAndName(market.getAddress(), market.getName());
+        repository.deleteByAddressAndName(market.getAddress(), market.getName());
     }
 
     public @ResponseBody
