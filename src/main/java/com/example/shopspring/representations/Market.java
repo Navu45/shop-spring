@@ -33,14 +33,6 @@ public class Market implements Nameable {
     }
 
     @Override
-    public String toString() {
-        return "Market{" +
-                "name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                '}';
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -54,5 +46,12 @@ public class Market implements Nameable {
         return Objects.hash(name, address);
     }
 
-
+    @Override
+    public String toString() {
+        return "Market{" +
+                "name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", marketProducts=" + marketProducts +
+                '}';
+    }
 }

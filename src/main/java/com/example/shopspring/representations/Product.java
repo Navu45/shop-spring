@@ -44,4 +44,12 @@ public class Product implements Nameable {
     public int hashCode() {
         return Objects.hash(id, name, price, market);
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }

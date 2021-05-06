@@ -1,229 +1,128 @@
-1528 [restartedMain] INFO  c.e.s.ShopSpringApplication
-                – Starting ShopSpringApplication using Java 12.0.2 on DESKTOP-J8OKANM with PID 12060 (C:\Users\Алексей\java-3-semester-master\shop-spring\target\classes started by Aleksey in C:\Users\Алексей\java-3-semester-master\shop-spring)
-1537 [restartedMain] INFO  c.e.s.ShopSpringApplication
+1453 [restartedMain] INFO  c.e.s.ShopSpringApplication
+                – Starting ShopSpringApplication using Java 12.0.2 on DESKTOP-J8OKANM with PID 8916 (C:\Users\Алексей\java-3-semester-master\shop-spring\target\classes started by Aleksey in C:\Users\Алексей\java-3-semester-master\shop-spring)
+1468 [restartedMain] INFO  c.e.s.ShopSpringApplication
                 – No active profile set, falling back to default profiles: default
-1629 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+1546 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
                 – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-1632 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+1546 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
                 – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2794 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+2359 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
                 – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2903 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+2469 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
                 – Finished Spring Data repository scanning in 100 ms. Found 2 JPA repository interfaces.
-3704 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+3328 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
                 – Tomcat initialized with port(s): 8080 (http)
-3722 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+3344 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
                 – Initializing ProtocolHandler ["http-nio-8080"]
-3724 [restartedMain] INFO  o.a.catalina.core.StandardService
+3344 [restartedMain] INFO  o.a.catalina.core.StandardService
                 – Starting service [Tomcat]
-3724 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+3344 [restartedMain] INFO  o.a.catalina.core.StandardEngine
                 – Starting Servlet engine: [Apache Tomcat/9.0.45]
-3885 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+3469 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
                 – Initializing Spring embedded WebApplicationContext
-3885 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
-                – Root WebApplicationContext: initialization completed in 2253 ms
-4099 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+3469 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1923 ms
+3656 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
                 – HikariPool-1 - Starting...
-4378 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+3938 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
                 – HikariPool-1 - Start completed.
-4439 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper
+3984 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper
                 – HHH000204: Processing PersistenceUnitInfo [name: default]
-4554 [restartedMain] INFO  org.hibernate.Version
+4047 [restartedMain] INFO  org.hibernate.Version
                 – HHH000412: Hibernate ORM core version 5.4.30.Final
-4848 [restartedMain] INFO  o.h.annotations.common.Version
+4297 [restartedMain] INFO  o.h.annotations.common.Version
                 – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-5081 [restartedMain] INFO  org.hibernate.dialect.Dialect
+4500 [restartedMain] INFO  org.hibernate.dialect.Dialect
                 – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-6259 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+5484 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
                 – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-6268 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+5500 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
                 – Initialized JPA EntityManagerFactory for persistence unit 'default'
-6784 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+6016 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
                 – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-7002 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor
+6234 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor
                 – Initializing ExecutorService 'applicationTaskExecutor'
-7355 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+6500 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
                 – LiveReload server is running on port 35729
-7382 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+6516 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
                 – Starting ProtocolHandler ["http-nio-8080"]
-7409 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+6531 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
                 – Tomcat started on port(s): 8080 (http) with context path ''
-7422 [restartedMain] INFO  c.e.s.ShopSpringApplication
-                – Started ShopSpringApplication in 6.725 seconds (JVM running for 9.163)
-77604 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+6547 [restartedMain] INFO  c.e.s.ShopSpringApplication
+                – Started ShopSpringApplication in 5.858 seconds (JVM running for 8.677)
+44589 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
                 – Initializing Spring DispatcherServlet 'dispatcherServlet'
-77607 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+44589 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
                 – Initializing Servlet 'dispatcherServlet'
-77609 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
-                – Completed initialization in 1 ms
-77649 [http-nio-8080-exec-1] INFO  c.e.s.services.MarketService
-                – get all markets
-77674 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]
-                – Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
-java.lang.NullPointerException: null
-	at com.example.shopspring.services.MarketService.findAll(MarketService.java:45)
-	at com.example.shopspring.controllers.MarketController.getMarkets(MarketController.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-1673 [restartedMain] INFO  c.e.s.ShopSpringApplication
-                – Starting ShopSpringApplication using Java 12.0.2 on DESKTOP-J8OKANM with PID 6716 (C:\Users\Алексей\java-3-semester-master\shop-spring\target\classes started by Aleksey in C:\Users\Алексей\java-3-semester-master\shop-spring)
-1687 [restartedMain] INFO  c.e.s.ShopSpringApplication
+44589 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 0 ms
+44719 [http-nio-8080-exec-1] INFO  c.e.shopspring.aspects.LogAspect
+                – Parameters: com.example.shopspring.representations.Product@a2b4974a
+44741 [http-nio-8080-exec-1] INFO  c.e.s.services.ProductService
+                – find market by product com.example.shopspring.representations.Product@a2b4974a
+44998 [http-nio-8080-exec-1] INFO  c.e.shopspring.aspects.LogAspect
+                – Market com.example.shopspring.services.ProductService.getMarketByProduct(Product) выполнен за 273мс
+2110 [restartedMain] INFO  c.e.s.ShopSpringApplication
+                – Starting ShopSpringApplication using Java 12.0.2 on DESKTOP-J8OKANM with PID 1232 (C:\Users\Алексей\java-3-semester-master\shop-spring\target\classes started by Aleksey in C:\Users\Алексей\java-3-semester-master\shop-spring)
+2110 [restartedMain] INFO  c.e.s.ShopSpringApplication
                 – No active profile set, falling back to default profiles: default
-1765 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+2297 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
                 – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-1765 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+2313 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
                 – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-3221 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+3719 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
                 – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-3364 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
-                – Finished Spring Data repository scanning in 129 ms. Found 2 JPA repository interfaces.
-4291 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+3860 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 130 ms. Found 2 JPA repository interfaces.
+4938 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
                 – Tomcat initialized with port(s): 8080 (http)
-4305 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+4953 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
                 – Initializing ProtocolHandler ["http-nio-8080"]
-4305 [restartedMain] INFO  o.a.catalina.core.StandardService
+4953 [restartedMain] INFO  o.a.catalina.core.StandardService
                 – Starting service [Tomcat]
-4306 [restartedMain] INFO  o.a.catalina.core.StandardEngine
+4953 [restartedMain] INFO  o.a.catalina.core.StandardEngine
                 – Starting Servlet engine: [Apache Tomcat/9.0.45]
-4439 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+5110 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
                 – Initializing Spring embedded WebApplicationContext
-4439 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
-                – Root WebApplicationContext: initialization completed in 2672 ms
-4621 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+5110 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 2797 ms
+5281 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
                 – HikariPool-1 - Starting...
-4879 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
+5625 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
                 – HikariPool-1 - Start completed.
-4929 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper
+5719 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper
                 – HHH000204: Processing PersistenceUnitInfo [name: default]
-4995 [restartedMain] INFO  org.hibernate.Version
+5828 [restartedMain] INFO  org.hibernate.Version
                 – HHH000412: Hibernate ORM core version 5.4.30.Final
-5236 [restartedMain] INFO  o.h.annotations.common.Version
+6188 [restartedMain] INFO  o.h.annotations.common.Version
                 – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-5470 [restartedMain] INFO  org.hibernate.dialect.Dialect
+6469 [restartedMain] INFO  org.hibernate.dialect.Dialect
                 – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-6547 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+7625 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
                 – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-6562 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+7656 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
                 – Initialized JPA EntityManagerFactory for persistence unit 'default'
-6984 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+8313 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
                 – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-7222 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor
+8532 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor
                 – Initializing ExecutorService 'applicationTaskExecutor'
-7557 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
+8860 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
                 – LiveReload server is running on port 35729
-7585 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
+8891 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
                 – Starting ProtocolHandler ["http-nio-8080"]
-7617 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+8922 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
                 – Tomcat started on port(s): 8080 (http) with context path ''
-7642 [restartedMain] INFO  c.e.s.ShopSpringApplication
-                – Started ShopSpringApplication in 6.838 seconds (JVM running for 9.273)
-2714 [restartedMain] INFO  c.e.s.ShopSpringApplication
-                – Starting ShopSpringApplication using Java 12.0.2 on DESKTOP-J8OKANM with PID 14972 (C:\Users\Алексей\java-3-semester-master\shop-spring\target\classes started by Aleksey in C:\Users\Алексей\java-3-semester-master\shop-spring)
-2719 [restartedMain] INFO  c.e.s.ShopSpringApplication
-                – No active profile set, falling back to default profiles: default
-2837 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
-                – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2838 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
-                – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-4484 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
-                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-4602 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
-                – Finished Spring Data repository scanning in 107 ms. Found 2 JPA repository interfaces.
-5620 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
-                – Tomcat initialized with port(s): 8080 (http)
-5632 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
-                – Initializing ProtocolHandler ["http-nio-8080"]
-5634 [restartedMain] INFO  o.a.catalina.core.StandardService
-                – Starting service [Tomcat]
-5634 [restartedMain] INFO  o.a.catalina.core.StandardEngine
-                – Starting Servlet engine: [Apache Tomcat/9.0.45]
-5795 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
-                – Initializing Spring embedded WebApplicationContext
-5796 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
-                – Root WebApplicationContext: initialization completed in 2958 ms
-6014 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
-                – HikariPool-1 - Starting...
-6309 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource
-                – HikariPool-1 - Start completed.
-6374 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper
-                – HHH000204: Processing PersistenceUnitInfo [name: default]
-6464 [restartedMain] INFO  org.hibernate.Version
-                – HHH000412: Hibernate ORM core version 5.4.30.Final
-6772 [restartedMain] INFO  o.h.annotations.common.Version
-                – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-7096 [restartedMain] INFO  org.hibernate.dialect.Dialect
-                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-10717 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
-                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-10733 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
-                – Initialized JPA EntityManagerFactory for persistence unit 'default'
-11432 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
-                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-11746 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor
-                – Initializing ExecutorService 'applicationTaskExecutor'
-12137 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer
-                – LiveReload server is running on port 35729
-12168 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol
-                – Starting ProtocolHandler ["http-nio-8080"]
-12199 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer
-                – Tomcat started on port(s): 8080 (http) with context path ''
-12219 [restartedMain] INFO  c.e.s.ShopSpringApplication
-                – Started ShopSpringApplication in 10.88 seconds (JVM running for 14.11)
-26653 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+8938 [restartedMain] INFO  c.e.s.ShopSpringApplication
+                – Started ShopSpringApplication in 7.979 seconds (JVM running for 11.848)
+14235 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
                 – Initializing Spring DispatcherServlet 'dispatcherServlet'
-26655 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+14235 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet
                 – Initializing Servlet 'dispatcherServlet'
-26656 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet
-                – Completed initialization in 1 ms
-26686 [http-nio-8080-exec-2] INFO  c.e.s.services.MarketService
-                – get all markets
-34387 [http-nio-8080-exec-3] INFO  c.e.s.services.ProductService
-                – get all products
+14235 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 0 ms
+14376 [http-nio-8080-exec-2] INFO  c.e.shopspring.aspects.LogAspect
+                – Parameters: Product{, name='chocolate', price=100.99}
+14407 [http-nio-8080-exec-2] INFO  c.e.s.services.ProductService
+                – find market by product Product{, name='chocolate', price=100.99}
+14688 [http-nio-8080-exec-2] INFO  c.e.shopspring.aspects.LogAspect
+                – Market com.example.shopspring.services.ProductService.getMarketByProduct(Product) выполнен за 312мс
