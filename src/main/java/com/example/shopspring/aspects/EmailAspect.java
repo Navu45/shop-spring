@@ -8,9 +8,6 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.mail.SimpleMailMessage;
-import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -18,7 +15,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class EmailAspect {
 
-    @Pointcut("execution(* com.example.shopspring.services.*.create(..)))")
+    @Pointcut("execution(* com.example.shopspring.services.search.*.create(..)))")
     public void createServiceMethods() {}
 
     @Around("createServiceMethods()")

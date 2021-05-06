@@ -51,7 +51,6 @@ public class Market implements Nameable {
         return "Market{" +
                 "name='" + name + '\'' +
                 ", address='" + address + '\'' +
-                ", marketProducts=" + marketProducts +
                 '}';
     }
 }

@@ -1,8 +1,9 @@
-package com.example.shopspring.services;
+package com.example.shopspring.services.search;
 
 import com.example.shopspring.repositories.MarketRepository;
 import com.example.shopspring.representations.Market;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -12,7 +13,7 @@ import java.util.List;
 @Service
 @Transactional
 @Slf4j
-public class MarketService implements SearchService<Market>{
+public class MarketService implements SearchService<Market> {
     private MarketRepository repository;
 
     public MarketService(MarketRepository repository) {
@@ -39,8 +40,9 @@ public class MarketService implements SearchService<Market>{
         repository.deleteByAddressAndName(market.getAddress(), market.getName());
     }
 
+    @Bean
     public @ResponseBody
-    List<Market> findAll() {
+    List<Market> findAllMarkets() {
         log.info("get all markets");
         return repository.findAll();
     }

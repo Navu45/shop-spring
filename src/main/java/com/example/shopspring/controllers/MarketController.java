@@ -1,7 +1,7 @@
 package com.example.shopspring.controllers;
 
 import com.example.shopspring.representations.Market;
-import com.example.shopspring.services.MarketService;
+import com.example.shopspring.services.search.MarketService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,7 +18,7 @@ public class MarketController {
 
     @GetMapping("/markets")
     List<Market> getMarkets() {
-        return marketService.findAll();
+        return marketService.findAllMarkets();
     }
 
 

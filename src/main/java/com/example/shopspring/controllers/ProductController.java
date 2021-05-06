@@ -2,7 +2,7 @@ package com.example.shopspring.controllers;
 
 import com.example.shopspring.representations.Market;
 import com.example.shopspring.representations.Product;
-import com.example.shopspring.services.ProductService;
+import com.example.shopspring.services.search.ProductService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -19,7 +19,7 @@ public class ProductController {
     @GetMapping("/products")
     public @ResponseBody
     List<Product> getProducts() {
-        return productService.findAll();
+        return productService.findAllProducts();
     }
 
     @DeleteMapping("/products")

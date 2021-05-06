@@ -1,0 +1,1 @@
+[Product{, name='butter', price=329.0}, Product{, name='tomatoes', price=250.8}, Product{, name='chocolate', price=100.99}, Product{, name='flour', price=66.79}, Product{, name='pen', price=29.5}, Product{, name='pencil', price=19.5}, Product{, name='bay leaves', price=200.99}]

@@ -1,9 +1,10 @@
-package com.example.shopspring.services;
+package com.example.shopspring.services.search;
 
 import com.example.shopspring.repositories.ProductRepository;
 import com.example.shopspring.representations.Market;
 import com.example.shopspring.representations.Product;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
@@ -12,7 +13,7 @@ import java.util.List;
 @Service
 @Transactional
 @Slf4j
-public class ProductService implements SearchService<Product>{
+public class ProductService implements SearchService<Product> {
 
     private ProductRepository repository;
 
@@ -49,8 +50,8 @@ public class ProductService implements SearchService<Product>{
         repository.deleteByPriceAndName(product.getPrice(), product.getName());
     }
 
-    @Override
-    public List<Product> findAll() {
+    @Bean
+    public List<Product> findAllProducts() {
         log.info("get all products");
         return repository.findAll();
     }
