@@ -1,7 +1,8 @@
 package com.example.shopspring.controllers;
 
 import com.example.shopspring.representations.Market;
-import com.example.shopspring.services.search.MarketService;
+import com.example.shopspring.services.database.MarketService;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -23,8 +24,7 @@ public class MarketController {
 
 
     @DeleteMapping("/markets")
-    @ResponseBody void
-    deleteMarket(@RequestBody Market market) {
+    void deleteMarket(@RequestBody Market market) {
         marketService.delete(market);
     }
 
@@ -34,12 +34,12 @@ public class MarketController {
     }
 
     @GetMapping("/markets/search/name")
-    @ResponseBody List<Market> getMarketByName(@RequestBody Map<String, String> params) {
+    List<Market> getMarketByName(@RequestBody Map<String, String> params) {
         return marketService.findBySearchStr(params.get("search"), "name");
     }
 
     @GetMapping("/markets/search/address")
-    @ResponseBody List<Market> getMarketByAddress(@RequestBody Map<String, String> params) {
+    List<Market> getMarketByAddress(@RequestBody Map<String, String> params) {
         return marketService.findBySearchStr(params.get("search"), "address");
     }
 }

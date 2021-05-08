@@ -1,6 +1,6 @@
 package com.example.shopspring.aspects;
 
-import com.example.shopspring.services.EmailService;
+import com.example.shopspring.services.email.EmailService;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class EmailAspect {
 
-    @Pointcut("execution(* com.example.shopspring.services.search.*.create(..)))")
+    @Pointcut("execution(* com.example.shopspring.services.database.*.create(..)))")
     public void createServiceMethods() {}
 
     @Around("createServiceMethods()")

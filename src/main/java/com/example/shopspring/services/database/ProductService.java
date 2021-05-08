@@ -1,4 +1,4 @@
-package com.example.shopspring.services.search;
+package com.example.shopspring.services.database;
 
 import com.example.shopspring.repositories.ProductRepository;
 import com.example.shopspring.representations.Market;
@@ -13,7 +13,7 @@ import java.util.List;
 @Service
 @Transactional
 @Slf4j
-public class ProductService implements SearchService<Product> {
+public class ProductService implements DatabaseService<Product> {
 
     private ProductRepository repository;
 

@@ -1,4 +1,4 @@
-package com.example.shopspring.services;
+package com.example.shopspring.services.email;
 
 
 import org.springframework.context.annotation.Bean;

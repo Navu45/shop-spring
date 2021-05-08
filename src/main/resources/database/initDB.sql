@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS products
 (
     id    INTEGER PRIMARY KEY ,
     market_id integer,
-    name  VARCHAR(200),
+    name  VARCHAR(256),
     price DOUBLE PRECISION
 );
 CREATE SEQUENCE IF NOT EXISTS products_id_seq START WITH 5 INCREMENT BY 1;
@@ -10,7 +10,16 @@ CREATE SEQUENCE IF NOT EXISTS products_id_seq START WITH 5 INCREMENT BY 1;
 CREATE TABLE IF NOT EXISTS markets
 (
     id    INTEGER PRIMARY KEY ,
-    name  VARCHAR(200),
-    address VARCHAR(254)
+    name  VARCHAR(256),
+    address VARCHAR(256)
 );
 CREATE SEQUENCE IF NOT EXISTS markets_id_seq START WITH 4 INCREMENT BY 1;
+
+CREATE TABLE IF NOT EXISTS users
+(
+    id    INTEGER PRIMARY KEY ,
+    username  VARCHAR(256),
+    password VARCHAR(256)
+);
+
+CREATE SEQUENCE IF NOT EXISTS users_id_seq;

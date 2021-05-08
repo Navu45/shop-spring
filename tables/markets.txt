@@ -1,1 +1,1 @@
-[Market{name='Auchan', address='dfsadfsd street, 8'}, Market{name='VkusVille', address='oiljo street, 107k10'}, Market{name='Auchan', address='yjomhgbgf street, 200'}, Market{name='local grocery store', address='nowhere'}]
+[Market{name='Auchan', address='dfsadfsd street, 8'}, Market{name='VkusVille', address='oiljo street, 107k10'}, Market{name='Auchan', address='yjomhgbgf street, 200'}]

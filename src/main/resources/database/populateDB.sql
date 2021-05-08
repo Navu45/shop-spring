@@ -8,3 +8,4 @@ INSERT INTO products VALUES
 (2, 2, 'tomatoes', 250.80),
 (3, 3, 'chocolate', 100.99),
 (4, 1, 'flour', 66.79);
+
